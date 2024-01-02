@@ -54,6 +54,7 @@ To flash:
 [Klipper Adaptive Meshing and Purging](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging)
 [Spoolman Filament Manager] (https://lemmy.world/post/6872890)
 [Klipper Installation And Update Helper] (https://github.com/dw-0/kiauh)
+[Klipper Auto Speed](https://github.com/Anonoei/klipper_auto_speed)
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/239513/141822711-2818978e-2b87-4110-9b93-e5f489c9cdc7.png)
