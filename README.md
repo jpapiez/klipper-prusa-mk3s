@@ -17,7 +17,7 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
 ```
 cd
 git clone https://github.com/jpapiez/klipper-prusa-mk3s.git
-ln -s ~/klipper-prusa-mk3s printer_data/config/prusa-mk3s
+ln -s ~/klipper-prusa-mk3s printer_data/config/klipper-prusa-mk3s
 
 cp ~/klipper-prusa-mk3s/printer.template.cfg ~/printer_data/config/printer.template.cfg
 ```
