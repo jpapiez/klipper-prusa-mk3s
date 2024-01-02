@@ -12,7 +12,15 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
 1. Install https://docs.mainsail.xyz/setup/mainsail-os to SDCard and RPI Zero 2 W
 2. Connect as described in https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180
 3. Update all components under Machine tab, otherwise config might not be able to load
-4. Clone config ```git clone https://github.com/dz0ny/klipper-prusa-mk3s.git ~/printer_data/config/klipper-prusa-mk3s```
+4. Clone config 
+
+```
+cd
+git clone https://github.com/jpapiez/klipper-prusa-mk3s.git
+ln -s ~/klipper-prusa-mk3s printer_data/config/prusa-mk3s
+
+cp ~/klipper-prusa-mk3s/printer.template.cfg ~/printer_data/config/printer.template.cfg
+```
 
   > If you are adding this configuration after installing Klipper via [KIAUH](https://github.com/th33xitus/kiauh), the directory might be different - typically following `~/[printer_name]/printer_data/config`, where `[printer_name]` is the name you selected during the Kiauh installation
 
@@ -21,14 +29,14 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
 ```yml
 [update_manager prusa]
 type: git_repo
-origin: https://github.com/dz0ny/klipper-prusa-mk3s.git
-path: ~/printer_data/config/klipper-prusa-mk3s
+origin: https://github.com/jpapiez/klipper-prusa-mk3s.git
+path: ~/klipper-prusa-mk3s
 primary_branch: main
 is_system_service: False
 managed_services: klipper
 ```
 
-2. Copy https://github.com/dz0ny/klipper-prusa-mk3s/blob/main/printer.template.cfg to `printer.cfg` in your klipper config
+2. Rename printer.template.cfg to `printer.cfg` in your klipper config
 3. Adjust config to your hardware
 4. Flash Klipper to your printer https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
 
@@ -43,8 +51,9 @@ To flash:
 
 
 ## Nice things
-[Klipper mesh on print area only install guide](https://gist.github.com/ChipCE/95fdbd3c2f3a064397f9610f915f7d02)
-
+[Klipper Adaptive Meshing and Purging](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging)
+[Spoolman Filament Manager] (https://lemmy.world/post/6872890)
+[Klipper Installation And Update Helper] (https://github.com/dw-0/kiauh)
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/239513/141822711-2818978e-2b87-4110-9b93-e5f489c9cdc7.png)
